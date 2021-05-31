@@ -29,7 +29,6 @@ namespace XF.WebApi.Controllers
         [ObjectModelValidatorFilter(ValidatorModel.Login)]
         public IEnumerable<WeatherForecast> Get([FromBody] LoginInfo loginInfo)
         {
-            var 啥都 = "sds";
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
